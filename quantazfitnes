@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allan's Fitness Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg') no-repeat center center/cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    nav {
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    nav .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: orange;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Search box */
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      padding: 8px;
+      border: none;
+      outline: none;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .search-box button {
+      background:orangered;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Content Layout */
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px 50px;
+      gap: 40px;
+    }
+
+    /* Hero Section */
+    .text {
+      max-width: 55%;
+    }
+
+    .text h1 {
+      font-size: 45px;
+    }
+
+    .text h1 span {
+      color:orangered;
+    }
+
+    .text p {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .text button {
+      padding: 12px 25px;
+      background: green;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Products Section */
+    .products {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+      color: orange;
+      font-weight: bold;
+    }
+
+    .product-card button {
+      padding: 8px 15px;
+      background: orange;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Login box */
+    .login-box {
+      background: rgba(0,0,0,0.85);
+      padding: 30px;
+      border-radius: 10px;
+      width: 280px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      background: white;
+      color: orange;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid orange;
+      background: transparent;
+      color: white;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: orange;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-box p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .login-box p a {
+      color: orange;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Allan's Fitness 🏋️</div>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">SHOP</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Search gym equipment...">
+      <button>Search</button>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- Hero + Products -->
+    <div class="text">
+      <h1>Welcome to <span>Allan's Fitness Shop</span></h1>
+      <p>Your one-stop online store for premium gym equipment. Build your dream gym place today!</p>
+      <button>Shop Now</button>
+
+      <!-- Products -->
+      <div class="products">
+        <div class="product-card">
+          <img src="https://images.pexels.com/photos/4162462/pexels-photo-4162462.jpeg" alt="Dumbbells">
+          <h3>Dumbbells Set</h3>
+          <p>KES 5,000</p>
+          <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg" alt="Treadmill">
+          <h3>Treadmill</h3>
+          <p>KES 50,000</p>
+          <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg" alt="Bench Press">
+          <h3>Bench Press</h3>
+          <p>KES 25,000</p>
+          <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.pexels.com/photos/7031707/pexels-photo-7031707.jpeg" alt="Exercise Bike">
+          <h3>Exercise Bike</h3>
+          <p>KES 18,000</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Box -->
+    <div class="login-box">
+      <h2>Login Here</h2>
+      <input type="text" placeholder="Enter Email Here">
+      <input type="password" placeholder="Enter Password Here">
+      <button>Login</button>
+      <p>Don't have an account? <a href="#">Sign up here</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
+
